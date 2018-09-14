@@ -5,24 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Agenda de contatos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap-4.0.0/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
-    <script type="text/javascript" src="angular-1.7.2/angular.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="vendor/bootstrap-4.0.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="estilos_proprios/estilo.css" />
+    <script type="text/javascript" src="vendor/angular-1.7.2/angular.js"></script>
     <script src="main.js"></script>
     <script src="controller.js"></script>
 </head>
 <body ng-controller="Controller">
     <div class="container">
-        <div class="jumbotron">
+        <div class="jumbotron topo">
             <h1><strong>AGENDA DE CONTATOS</strong></h1>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                awdawd
+        <div class="row" ng-show="contatos" ng-repeat="contato in contatos">
+            <div class="col-md-3">
+                <strong>Nome:</strong>
             </div>
-            <div class="col-md-6">
-                    awdawd
+            <div class="col-md-9">
+                {{contato}}
             </div>
+        </div>
+        <div class="row " ng-show="0 >= contatos">
+            <div class="col-md-12 div-vazia">
+                <strong>Você não possui nenhum contato cadastrado!</strong>
+            </div>
+        </div>
+        <div class="rounded rodape">
+            <h6><strong>2018 - </strong>Jackson Pereira da Silva</h6>
         </div>
     </div>
 </body>
