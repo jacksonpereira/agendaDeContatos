@@ -1,17 +1,43 @@
+.containerProprio{
+    min-width: 600px;
+    max-width: 800px; 
+}
 h1{
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, Calibri;
     color: #ffffff;
     text-shadow: 0.1em 0.1em 0.2em, #333333;
 }
+.linha-contato{
+    margin: 6px 6px 6px 6px;
+    padding: 10px 2px 10px 6px;
+}
+.linha-contato:hover{
+    background-color: #8A2BE2;
+    color: #ffffff;
+    font-weight: bold;
+}
+/* .btn-editar-cnt{
+    background-color: darkgrey;
+    border-color: darkgrey;
+}
+.btn-editar-cnt:hover{
+    background-color: lavender;
+    border-color: lavender;
+} */
 .topo{
+    height: 120px;
     margin: 10px 0px 10px 0px;
-    background-image: linear-gradient(to bottom right,#8A2BE2,#000080);
+    padding: 6px 6px 6px 6px;
+    text-align: left;
+    background-image: linear-gradient(to bottom right,#000080, #8A2BE2);
 }
 .rodape{
     color: #ffffff;
     height: 50px;
     margin: 10px 0px 10px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, Calibri;
     text-align: center;
+    text-transform: uppercase;
     padding: 15px 0px 15px 0px;
     background-image: linear-gradient(to bottom right,#000080,#8A2BE2);
 }
